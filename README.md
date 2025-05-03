@@ -2,7 +2,8 @@
 
 ![Made With React](https://img.shields.io/badge/Made%20with-React-61DAFB?logo=react)
 
-> 🚀 A gaming-themed to-do list app where every task is a quest and every tick is a victory!
+🚀 A gaming-themed to-do list app where every task is a quest and every tick is a victory!
+*Demo* - ()
 
 ---
 
