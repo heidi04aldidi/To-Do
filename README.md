@@ -31,8 +31,7 @@ Built with passion by **Geethika** — a developer who loves mixing creativity w
 🎮 “Turning boring tasks into epic quests since 2025!”
 
 ### **Contact** 
- **LinkedIn Profile**: https://www.linkedin.com/in/geethika04/?trk=opento_sprofile_details
- **Mail ID**: gycdi18@gmail.com
+ - **LinkedIn Profile**: https://www.linkedin.com/in/geethika04/?trk=opento_sprofile_details
+ - **Mail ID**: gycdi18@gmail.com
 
-#### If you enjoyed the QuestBoard experience:
-Share it with fellow explorers!
+If you enjoyed the QuestBoard experience, share it with fellow explorers!
