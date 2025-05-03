@@ -1,7 +1,8 @@
 # 🎮 QuestBoard: Level Up Your Productivity!
 
 🚀 A gaming-themed to-do list app where every task is a quest and every tick is a victory!
-*Demo* - (https://to-do-mocha-alpha.vercel.app/)
+
+- *Demo* - (https://to-do-mocha-alpha.vercel.app/)
 
 ---
 
@@ -30,8 +31,8 @@ Built with passion by **Geethika** — a developer who loves mixing creativity w
 🎮 “Turning boring tasks into epic quests since 2025!”
 
 ### **Contact** 
-=> ![**LinkedIn Profile**](https://www.linkedin.com/in/geethika04/?trk=opento_sprofile_details)
-=> ![**Mail ID**](gycdi18@gmail.com)
+ **LinkedIn Profile**: https://www.linkedin.com/in/geethika04/?trk=opento_sprofile_details
+ **Mail ID**: gycdi18@gmail.com
 
 #### If you enjoyed the QuestBoard experience:
 Share it with fellow explorers!
