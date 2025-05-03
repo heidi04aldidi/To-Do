@@ -1,35 +1,77 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState, useEffect } from 'react';
+import './App.css';
+import { playSound } from './soundPlayer';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [tasks, setTasks] = useState([]);
+  const [input, setInput] = useState('');
+  const [theme, setTheme] = useState('retro'); // default theme
+
+  useEffect(() => {
+    document.body.className = theme; // Apply selected theme class to <body>
+  }, [theme]);
+
+  const addTask = () => {
+    if (input.trim()) {
+      setTasks([...tasks, { text: input, completed: false }]);
+      setInput('');
+      playSound('add.mp3');
+    }
+  };
+
+  const deleteTask = (index) => {
+    const updatedTasks = [...tasks];
+    updatedTasks.splice(index, 1);
+    setTasks(updatedTasks);
+    playSound('delete.mp3');
+  };
+
+  const toggleComplete = (index) => {
+    const updatedTasks = [...tasks];
+    updatedTasks[index].completed = !updatedTasks[index].completed;
+    setTasks(updatedTasks);
+    playSound('complete.mp3');
+  };
+
+  const handleThemeChange = (e) => {
+    setTheme(e.target.value);
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="App">
+      <h1>QuestBoard 🎮</h1>
+
+      <select onChange={handleThemeChange} value={theme} className="theme-switcher">
+        <option value="retro">🎮 Retro Arcade</option>
+        <option value="cyber">💾 Cyberpunk</option>
+        <option value="forest">🌲 Forest Elf</option>
+      </select>
+
+      <div className="input-container">
+        <input
+          type="text"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          placeholder="Add your quest..."
+        />
+        <button onClick={addTask}>Add</button>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+
+      <ul>
+        {tasks.map((task, index) => (
+          <li key={index} className={task.completed ? 'completed' : ''}>
+            <span onClick={() => toggleComplete(index)} className="task-check">
+              🏹
+            </span>
+            <span className="task-text" onClick={() => toggleComplete(index)}>
+              {task.text}
+            </span>
+            <button onClick={() => deleteTask(index)}>❌</button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
-export default App
+export default App;

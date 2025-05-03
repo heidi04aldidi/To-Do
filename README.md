@@ -1,12 +1,51 @@
-# React + Vite
+# 🎮 QuestBoard: Level Up Your Productivity!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![QuestBoard Logo](./assets/logo.png) <!-- Replace with your logo if you have one -->
 
-Currently, two official plugins are available:
+![Build](https://img.shields.io/badge/build-passing-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Made With React](https://img.shields.io/badge/Made%20with-React-61DAFB?logo=react)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> 🚀 A gaming-themed to-do list app where every task is a quest and every tick is a victory!
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🌟 Features
+
+- 🧾 **Add/Complete/Delete** tasks like a true adventurer
+- 🔊 **Sound Effects** for every action: adding tasks, completing them, and deleting
+- 🎨 **Epic Themes**: Retro Arcade, Cyberpunk, and Forest Elf
+- 📱 **Mobile Responsive** UI for on-the-go adventurers
+
+---
+
+## 📸 Screenshots
+
+| Retro Arcade Theme           | Cyberpunk Theme              | Forest Elf Theme               | App page                 |
+| ---------------------------- | ---------------------------- | ------------------------------ | ------------------------ |
+| ![retro](./assets/retro.png) | ![cyber](./assets/cyber.png) | ![forest](./assets/forest.png) | ![app](./assets/app.png) |
+
+---
+
+## ⚙️ Tech Stack
+
+- **Frontend**: React, Vite
+- **Styling**: CSS3, Custom Themes
+- **Sound Effects**: HTML5 Audio API
+- **Deployment**: Vercel
+
+---
+
+## 🧙 About the Developer
+
+Built with passion by Geethika — a developer who loves mixing creativity with code!
+
+🎮 “Turning boring tasks into epic quests since 2025!”
+
+### ⭐️ Show Your Support
+
+#### If you enjoyed the QuestBoard experience:
+
+⭐️ Star this repo
+🍴 Fork it
+🐉 Share it with fellow adventurers!
